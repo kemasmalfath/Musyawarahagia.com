@@ -1,0 +1,511 @@
+/* ===== CSS Variables - Color Palette Bendera Indonesia (Merah & Putih) ===== */
+:root {
+  --primary-red: #dc143c;
+  --white: #ffffff;
+  --light-gray: #f5f5f5;
+  --dark-gray: #333333;
+  --text-gray: #666666;
+  --border-gray: #eeeeee;
+}
+
+/* ===== Reset & Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Typography ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--primary-red);
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--primary-red);
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: var(--primary-red);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-gray);
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+  color: var(--white);
+}
+
+.nav-brand .tagline {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--light-gray);
+  text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--primary-red);
+}
+
+.btn-primary:hover {
+  background-color: var(--light-gray);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--primary-red);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: #a00000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.3);
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 4rem 0;
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Pentingnya Diskusi Section ===== */
+.penting-diskusi {
+  background-color: var(--light-gray);
+}
+
+.penting-diskusi h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.penting-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.penting-text h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.penting-text p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.penting-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.penting-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.penting-img:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Tentang Section ===== */
+.tentang {
+  background-color: var(--white);
+}
+
+.tentang h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary-red);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+/* ===== Berita Section ===== */
+.berita {
+  background-color: var(--light-gray);
+}
+
+.berita h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.news-card {
+  background: var(--white);
+  border: 1px solid var(--border-gray);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+
+.news-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-header {
+  padding: 1.5rem;
+  background-color: var(--primary-red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-diskusi {
+  background-color: var(--white);
+  color: var(--primary-red);
+}
+
+.badge-workshop {
+  background-color: var(--white);
+  color: var(--primary-red);
+}
+
+.badge-seminar {
+  background-color: var(--white);
+  color: var(--primary-red);
+}
+
+.news-card h3 {
+  padding: 1.5rem 1.5rem 0.5rem;
+  color: var(--primary-red);
+  font-size: 1.25rem;
+}
+
+.card-info {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
+
+.info-item .icon {
+  font-size: 1.2rem;
+}
+
+.card-desc {
+  padding: 1rem 1.5rem;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.news-card .btn {
+  margin: 1rem 1.5rem;
+  width: calc(100% - 3rem);
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--light-gray);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .penting-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .pistent-text h3 {
+    font-size: 1.1rem;
+  }
+}
